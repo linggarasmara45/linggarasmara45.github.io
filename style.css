@@ -1,0 +1,261 @@
+/* slider */
+
+/* navbar */
+.navbar-brand {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+}
+.nav-link {
+  text-transform: uppercase;
+  margin-right: 24px;
+}
+
+/* hero */
+
+.hero {
+  padding-top: 3rem;
+}
+.img {
+  padding-top: 1.5rem;
+  padding-left: 4.5rem;
+}
+
+.hero h2 {
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+  color: #c15123;
+  margin-bottom: 1rem;
+}
+
+.hero h1 {
+  font-size: 46;
+  font-family: "Montserrat", sans-serif;
+  color: #1d454d;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  color: #737373;
+  margin-bottom: 2rem;
+}
+
+.btn-row {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
+/* project */
+#project {
+  background-color: #1d454d;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='251' height='251' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%232F707D' stroke-width='1.6'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%23388695'%3E%3Ccircle cx='769' cy='229' r='5'/%3E%3Ccircle cx='539' cy='269' r='5'/%3E%3Ccircle cx='603' cy='493' r='5'/%3E%3Ccircle cx='731' cy='737' r='5'/%3E%3Ccircle cx='520' cy='660' r='5'/%3E%3Ccircle cx='309' cy='538' r='5'/%3E%3Ccircle cx='295' cy='764' r='5'/%3E%3Ccircle cx='40' cy='599' r='5'/%3E%3Ccircle cx='102' cy='382' r='5'/%3E%3Ccircle cx='127' cy='80' r='5'/%3E%3Ccircle cx='370' cy='105' r='5'/%3E%3Ccircle cx='578' cy='42' r='5'/%3E%3Ccircle cx='237' cy='261' r='5'/%3E%3Ccircle cx='390' cy='382' r='5'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+#project h2 {
+  font-size: 36px;
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+}
+
+/* personal project */
+#personal-p h2 {
+  font-size: 36px;
+  font-family: "Montserrat", sans-serif;
+  color: #1d454d;
+}
+
+.kotak h3 {
+  margin: auto;
+}
+
+/* personal project section */
+
+.personal-box {
+  position: relative;
+  background-color: #1d454d;
+  border-radius: 5px;
+  height: 400px;
+  transform-style: preserve-3d;
+}
+.personal-box::before {
+  content: "Personal";
+  position: absolute;
+  color: #ffffff;
+  font-size: 5em;
+  font-weight: bold;
+  font-style: italic;
+  top: 30px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.personal-box:hover::before {
+  opacity: 0.2;
+}
+
+.personal-box::after {
+  content: "Project";
+  position: absolute;
+  color: #ffffff;
+  font-size: 5.2em;
+  font-weight: bold;
+  font-style: italic;
+  top: 220px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.personal-box:hover::after {
+  opacity: 0.2;
+}
+
+.personal-name {
+  position: absolute;
+  color: #ffffff;
+  width: 100%;
+  top: 0px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  text-align: center;
+  opacity: 0;
+  transform: translate3d(0, 0, 50px);
+  transition: 0.5s;
+}
+
+.personal-box:hover .personal-name {
+  top: 30px;
+  opacity: 1;
+}
+
+.personal-detail-button {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate3d(-50%, 0, 70px);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.personal-box:hover .personal-detail-button {
+  opacity: 1;
+  bottom: 20px;
+}
+
+.kamera-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 60px);
+  max-width: 300px;
+  transition: 0.5s;
+}
+
+.personal-box:hover .kamera-img {
+  transform: translate3d(-50%, -50%, 60px) rotate(5deg) scale(1.1);
+}
+
+/* work */
+
+.work-panel {
+  background-color: #1d454d;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='251' height='251' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%232F707D' stroke-width='1.6'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%23388695'%3E%3Ccircle cx='769' cy='229' r='5'/%3E%3Ccircle cx='539' cy='269' r='5'/%3E%3Ccircle cx='603' cy='493' r='5'/%3E%3Ccircle cx='731' cy='737' r='5'/%3E%3Ccircle cx='520' cy='660' r='5'/%3E%3Ccircle cx='309' cy='538' r='5'/%3E%3Ccircle cx='295' cy='764' r='5'/%3E%3Ccircle cx='40' cy='599' r='5'/%3E%3Ccircle cx='102' cy='382' r='5'/%3E%3Ccircle cx='127' cy='80' r='5'/%3E%3Ccircle cx='370' cy='105' r='5'/%3E%3Ccircle cx='578' cy='42' r='5'/%3E%3Ccircle cx='237' cy='261' r='5'/%3E%3Ccircle cx='390' cy='382' r='5'/%3E%3C/g%3E%3C/svg%3E");
+  box-shadow: 0 3px 5px #979797;
+  border-radius: 3px;
+  padding: 32px;
+}
+
+#work h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.btn-custom1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+  text-align: center;
+  height: 55px;
+  padding: auto;
+  border-color: #c15123;
+}
+
+.btn-custom1:hover {
+  background-color: #c15123;
+  color: white;
+}
+
+.btn-custom2 {
+  margin-left: 20px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+  text-align: center;
+  height: 55px;
+  width: 140px;
+  padding: auto;
+  background-color: #c15123;
+}
+
+.btn-custom2:hover {
+  background-color: #ad461c;
+  color: rgb(216, 216, 216);
+}
+
+/* hire */
+.hire h2 {
+  font-size: 36px;
+  font-family: "Montserrat", sans-serif;
+  color: #1d454d;
+}
+
+.hire h5 {
+  padding-top: 32px;
+  font-size: 27px;
+  font-family: "Montserrat", sans-serif;
+  color: #1d454d;
+}
+
+.hire p {
+  padding-top: 24px;
+  color: #737373;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+}
+
+/* tools */
+#tools {
+  background-color: #1d454d;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='251' height='251' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%232F707D' stroke-width='1.6'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%23388695'%3E%3Ccircle cx='769' cy='229' r='5'/%3E%3Ccircle cx='539' cy='269' r='5'/%3E%3Ccircle cx='603' cy='493' r='5'/%3E%3Ccircle cx='731' cy='737' r='5'/%3E%3Ccircle cx='520' cy='660' r='5'/%3E%3Ccircle cx='309' cy='538' r='5'/%3E%3Ccircle cx='295' cy='764' r='5'/%3E%3Ccircle cx='40' cy='599' r='5'/%3E%3Ccircle cx='102' cy='382' r='5'/%3E%3Ccircle cx='127' cy='80' r='5'/%3E%3Ccircle cx='370' cy='105' r='5'/%3E%3Ccircle cx='578' cy='42' r='5'/%3E%3Ccircle cx='237' cy='261' r='5'/%3E%3Ccircle cx='390' cy='382' r='5'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+#tools h2 {
+  font-size: 36px;
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+}
+
+/* footer */
+
+.footer {
+  background-color: #113238;
+}
+.footer h2 {
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.footer p {
+  font-size: 16px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  padding-bottom: 32px;
+}
